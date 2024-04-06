@@ -15,7 +15,7 @@ const HomeComponent = () => {
     };
 
     fetchUserData();
-  }, []);
+  });
 
   return (
     <div>

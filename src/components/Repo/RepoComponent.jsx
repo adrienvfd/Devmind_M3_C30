@@ -24,7 +24,9 @@ const ReposComponent = () => {
         <ul>
           {reposData.map(repo => (
             <li key={repo.id}>
++             <a href={`/repos/${repo.name}`}>
               <strong>{repo.name}</strong>: {repo.description}
+              </a>
             </li>
           ))}
         </ul>

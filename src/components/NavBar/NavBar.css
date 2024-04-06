@@ -1,0 +1,22 @@
+<<<<<<<<<<<<<<  ✨ Codeium Command ⭐ >>>>>>>>>>>>>>>>
+
+.navbar {
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+.navbar a:hover {
+  color: #aaffaa;
+}
+
+<<<<<<<  7d41977d-acd7-4d5b-94eb-346f488d30d1  >>>>>>>

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const RepositoryDetails = () => {
-  const { repositoryId } = useParams();
+  const { repositoryName } = useParams();
   const navigate = useNavigate();
   const [repoDetails, setRepoDetails] = useState(null);
 
   useEffect(() => {
     const fetchRepoDetails = async () => {
       try {
-        const response = await fetch(`https://api.github.com/repositories/${repositoryId}`);
+        const response = await fetch(`https://api.github.com/repos/adrienvfd/${repositoryName}`);
         if (response.ok) {
           const data = await response.json();
           setRepoDetails(data);
@@ -20,7 +20,7 @@ const RepositoryDetails = () => {
     };
 
     fetchRepoDetails();
-  }, [repositoryId]);
+  }, [repositoryName]);
 
   return (
     <div>
